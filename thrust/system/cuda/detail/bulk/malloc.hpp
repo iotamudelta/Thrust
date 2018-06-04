@@ -15,6 +15,9 @@
  *  limitations under the License.
  */
 
+#ifndef SYSTEM_CUDA_DETAIL_BULK_MALLOC_H
+#define SYSTEM_CUDA_DETAIL_BULK_MALLOC_H
+
 #pragma once
 
 #include <thrust/system/cuda/detail/bulk/detail/config.hpp>
@@ -619,3 +622,4 @@ inline void free(ConcurrentGroup &g, void *ptr)
 } // end namespace bulk
 BULK_NAMESPACE_SUFFIX
 
+#endif // SYSTEM_CUDA_DETAIL_BULK_MALLOC_H
